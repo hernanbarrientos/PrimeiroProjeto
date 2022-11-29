@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="4dp"
-    android:layout_margin="8dp"
+    android:layout_margin="4dp"
+    android:id="@+id/ll"
     tools:context=".MainActivity">
 
 
@@ -112,6 +113,17 @@
             android:inputType="text"
             android:padding="8dp" />
     </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_comentary"
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Comentário"
+        android:inputType="textMultiLine"
+        android:padding="8dp" />
 
     <Button
         android:id="@+id/btn_register"
