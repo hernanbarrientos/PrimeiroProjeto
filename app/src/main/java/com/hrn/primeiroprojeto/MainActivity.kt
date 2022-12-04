@@ -6,6 +6,7 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
 import android.widget.Toast.LENGTH_LONG
+import android.widget.ToggleButton
 import com.google.android.material.snackbar.BaseTransientBottomBar.LENGTH_INDEFINITE
 import com.google.android.material.snackbar.Snackbar
 
@@ -26,6 +27,15 @@ class MainActivity : AppCompatActivity() {
         val btnRegister : Button = findViewById(R.id.btn_register)
         btnRegister.setOnClickListener {
 
+        }
+
+        val toggleButton : ToggleButton = findViewById(R.id.toggleButton2)
+        toggleButton.setOnCheckedChangeListener{ compoundButton, state ->
+            if (state){
+                Toast.makeText(this,"Habilitado", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "Desabilitado", Toast.LENGTH_SHORT).show()
+            }
         }
 
     }
