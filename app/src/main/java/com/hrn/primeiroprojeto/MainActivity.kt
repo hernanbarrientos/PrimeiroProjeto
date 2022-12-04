@@ -4,9 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.Switch
 import android.widget.Toast
 import android.widget.Toast.LENGTH_LONG
 import android.widget.ToggleButton
+import androidx.appcompat.widget.SwitchCompat
 import com.google.android.material.snackbar.BaseTransientBottomBar.LENGTH_INDEFINITE
 import com.google.android.material.snackbar.Snackbar
 
@@ -38,5 +40,13 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        val switch : SwitchCompat = findViewById(R.id.switch2)
+        switch.setOnCheckedChangeListener { compoundButton, state ->
+            if (state){
+                Toast.makeText(this,"Habilitado", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "Desabilitado", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 }
