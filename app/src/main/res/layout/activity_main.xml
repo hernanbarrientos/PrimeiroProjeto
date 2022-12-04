@@ -11,125 +11,21 @@
     tools:context=".MainActivity">
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/edt_name"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="8dp"
-            android:ems="10"
-            android:hint="Nome"
-            android:inputType="textPersonName"
-            android:padding="8dp" />
-
-        <EditText
-            android:id="@+id/edt_date"
-            android:layout_height="50dp"
-            android:layout_width="match_parent"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="8dp"
-            android:ems="10"
-            android:hint="DD/MM/AAAA"
-            android:inputType="date"
-            android:padding="8dp" />
-    </LinearLayout>
-
-    <EditText
-        android:id="@+id/edt_email"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:hint="email@email.com.br"
-        android:inputType="textEmailAddress"
-        android:padding="8dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/edt_phone"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:layout_marginBottom="8dp"
-            android:ems="10"
-            android:hint="(DDD) X XXXX-XXXX"
-            android:inputType="phone"
-            android:padding="8dp" />
-
-        <EditText
-            android:id="@+id/edt_zipCode"
-            android:layout_height="50dp"
-            android:layout_width="match_parent"
-            android:layout_marginBottom="8dp"
-            android:ems="10"
-            android:hint="CEP 00000-000"
-            android:inputType="number"
-            android:padding="8dp" />
-    </LinearLayout>
-
-
-    <EditText
-        android:id="@+id/edt_address"
-        android:layout_height="50dp"
-        android:layout_width="match_parent"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:hint="Endereço Completo"
-        android:inputType="textPersonName"
-        android:padding="8dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/edt_number"
-            android:layout_width="164dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="8dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Nº"
-            android:inputType="number"
-            android:padding="8dp" />
-
-        <EditText
-            android:id="@+id/edt_complement"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="8dp"
-            android:layout_weight="1"
-            android:ems="10"
-            android:hint="Complemento"
-            android:inputType="text"
-            android:padding="8dp" />
-    </LinearLayout>
-
-    <EditText
-        android:id="@+id/edit_comentary"
-        android:layout_width="match_parent"
-        android:layout_height="148dp"
-        android:layout_marginBottom="8dp"
-        android:ems="10"
-        android:gravity="start|top"
-        android:hint="Comentário"
-        android:inputType="textMultiLine"
-        android:padding="8dp" />
-
     <Button
         android:id="@+id/btn_register"
         android:layout_width="match_parent"
         android:layout_height="64dp"
-        android:textSize="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
         android:text="CADASTRAR" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/lemon_green"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/account"
+        />
 
 </LinearLayout>

@@ -13,19 +13,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val snackbar = Snackbar.make(
-            findViewById(R.id.ll),
-            "Mensagem de teste",
-            Snackbar.LENGTH_INDEFINITE
-        )
+
 
         val btnRegister : Button = findViewById(R.id.btn_register)
         btnRegister.setOnClickListener {
-
-            if(snackbar.isShown)
-                snackbar.dismiss()
-            else
-                snackbar.show()
 
         }
 
